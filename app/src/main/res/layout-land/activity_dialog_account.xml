@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".AccountActivity.AccountActivity">
+
+    <!--android:paddingBottom="20dp"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:paddingLeft="100dp"-->
+    <!--android:paddingRight="100dp"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:background="@drawable/backgroud_okmenu"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <RelativeLayout
+                    android:id="@+id/layoutOkMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <!--<TextView-->
+                        <!--android:textColor="@android:color/white"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="OkMenu"-->
+                        <!--android:textSize="25dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <ImageView
+                        android:id="@+id/imCancel"
+                        android:src="@drawable/cancel_black"
+                        android:textSize="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/layoutOkMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:id="@+id/profile_image"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="3dp" />
+
+                        <ImageView
+                            android:visibility="visible"
+                            android:background="@drawable/cirecle_big"
+                            android:id="@+id/imYourImage"
+                            android:alpha="0.5"
+                            android:layout_gravity="center"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="user name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:text="account@gmail.com"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/camera"
+                        android:layout_gravity="end"
+                        android:id="@+id/takeImage"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:textColor="@color/textOrangeProfiel"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:background="#E0E0E0"
+                android:textSize="@dimen/profielTitile"
+                android:textStyle="bold"
+                android:text="PHONE"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvPhone"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="01010010101"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+
+
+            <TextView
+                android:textColor="@color/textOrangeProfiel"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:background="#E0E0E0"
+                android:textSize="@dimen/profielTitile"
+                android:textStyle="bold"
+                android:text="REFERENCE ID"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvId"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="8"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+
+
+            <TextView
+                android:textColor="@color/textOrangeProfiel"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:background="#E0E0E0"
+                android:textSize="@dimen/profielTitile"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="RESTURANT NAME"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvResturantName"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="abdallah resturant"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+
+
+            <TextView
+                android:textColor="@color/textOrangeProfiel"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:background="#E0E0E0"
+                android:textSize="@dimen/profielTitile"
+                android:textStyle="bold"
+                android:text="THEME COLOR"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvThemeColor"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="8"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+
+
+            <TextView
+                android:textColor="@color/textOrangeProfiel"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:background="#E0E0E0"
+                android:textSize="@dimen/profielTitile"
+                android:textStyle="bold"
+                android:text="THEME ACCENT COLOR"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvThemeAccent"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="8"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="abdallahandroid.resturantexamplemvp">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permissions.NETWORK_ACCESS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/noActionBar">
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OnBoard.onBoradActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".DialogLanguage.DialogActivity"
+            android:label="Language"
+            android:screenOrientation="landscape"
+            android:theme="@style/AbdoDialogLight" />
+        <activity
+            android:name=".login.loginActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".imageFoodsCategory.FoodCategoryActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".descriptionFood.DescriptionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AccountActivity.AccountActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AbdoDialogLight" />
+
+
+    </application>
+
+</manifest>

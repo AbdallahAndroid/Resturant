@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoard.onBoradActivity">
+
+    <!--android:layoutDirection="ltr"-->
+
+    <LinearLayout
+        android:id="@+id/layoutLinner1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutLinner2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="#424242"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="50">
+
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cirecle_small" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cirecle_small" />
+        <!--android:layout_width="20dp"-->
+
+        <ImageView
+            android:id="@+id/im3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cirecle_small" />
+
+        <ImageView
+            android:id="@+id/im4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cirecle_small" />
+
+        <ImageView
+            android:id="@+id/im5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cirecle_small" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:padding="12dp"
+        android:id="@+id/tvDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:gravity="left"
+        android:text="Done"
+        android:textColor="#757575"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

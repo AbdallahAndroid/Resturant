@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".descriptionFood.DescriptionActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutTitleResturantName"
+        android:background="#424242"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tvResturantName"
+            fontPath="fonts/DancingScript-Regular.ttf"
+            tools:ignore="MissingPrefix"
+
+            android:textColor="@color/abdoOrange"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="resturant name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutDescritpion"
+        android:background="@drawable/roundedbutton"
+        android:layout_below="@+id/layoutTitleResturantName"
+        android:layout_margin="30dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_margin="40dp"
+            android:background="@drawable/roundedimage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tvNameCategory"
+            fontPath="fonts/Shoroq-Font.ttf"
+            android:layout_width="445dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="Pasta"
+            android:textSize="50sp"
+            tools:ignore="MissingPrefix" />
+
+
+
+        <TextView
+            android:id="@+id/tvDescription"
+            fontPath="fonts/Shoroq-Font.ttf"
+            android:layout_width="445dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:text="طعمها لذيذ"
+            android:textSize="30sp"
+            tools:ignore="MissingPrefix" />
+
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/tvItemCounter"
+            fontPath="fonts/Shoroq-Font.ttf"
+            android:layout_width="402dp"
+            android:layout_height="39dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/image"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="-35dp"
+            android:gravity="left"
+            android:text="item counter: 40"
+            android:textSize="30sp"
+            tools:ignore="MissingPrefix" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

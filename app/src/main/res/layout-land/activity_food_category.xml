@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layoutHome"
+    android:layoutDirection="ltr"
+    android:background="@drawable/example_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:alpha="0.6"-->
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <TextView
+            android:id="@+id/tvRestName"
+            fontPath="fonts/DancingScript-Regular.ttf"
+            tools:ignore="MissingPrefix"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="waiting..."
+            android:textColor="#3F51B5"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imAccount"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="350dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/my_ccount"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+
+        <ImageView
+            android:id="@+id/imLanguage"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="435dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gloabal"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
